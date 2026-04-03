@@ -1,0 +1,151 @@
+body {
+  background-color: #f0f0f0;
+  color: rgb(30, 30, 30);
+  font-family: 'Lora', Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 6px;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+.page-wrapper {
+  padding: 40px 30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.card-white {
+  background-color: white;
+  padding: 36px 44px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.10);
+  border-radius: 4px;
+  margin: 18px 0;
+}
+
+.intro-inner {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.intro-photo img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text p {
+  margin-bottom: 22px;
+}
+
+.section-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.btn-dark {
+  background-color: #222;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 3px;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #555;
+  color: white;
+}
+
+#networks {
+  text-align: center;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 0 22px;
+  font-size: 30px;
+}
+
+.list-inline li a {
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.list-inline li a:hover {
+  color: #777;
+}
+
+@media (max-width: 780px) {
+  .container { width: 100%; }
+
+  .intro-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-photo img {
+    width: 140px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-wrapper { padding: 16px 10px; }
+  .card-white { padding: 24px 18px; }
+}
